@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;0,900;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: var(--black);
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+:root {
+    /* colors */
+    --green1: #4E9F0D;
+    --black: #000000;
+    --white: #ffffff;
+    /* colors end */
+
+    /* sizes */
+    --fw: 400;
+    --fw: 700;
+    --fw: 900;
+    /* sizes end */
+
+    /* responsive */
+    --coll-3: calc(100% / 12 * 3);
+    --coll-4: calc(100% / 12 * 4);
+    --coll-6: calc(100% / 12 * 6);
+    --coll-12: calc(100% / 12 * 12);
+    /* responsive end */
+}
+
+header {
+    background-image: url(./bg_img\ 1.jpg);
+    background-position-x: center;
+    background-size: cover;
+    height: auto;
+}
+
+.logo {
+    width: 160px;
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+    background: var(--green1);
+    color: var(--white);
+    border-radius: 4px;
+}
+
+
+.logo a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.container {
+    max-width: 1140px;
+    height: auto;
+    border: 1px solid green;        
+    margin: auto;
+}
+
+
+.logo {
+    width: 160px;
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+    background: var(--green1);
+    color: var(--white);
+    border-radius: 4px;
+}
+
+
+.logo a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+header ul {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+header ul li a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--white);
+    color: #4E9F0D;
+    flex-wrap: wrap;
+}
+
+
+header ul li a:hover {
+    background: var(--green1);
+    background: #e6ebe352;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+
+header h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 85px;
+    text-transform: uppercase;
+    color: #4E9F0D;
+    margin-top: 200px;
+}
+
+
+header .p1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: lowercase;
+    color: #4E9F0D;
+    margin-top: 20px;
+}
+
+header p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-top: 30px;
+
+}
+
+
+.row {
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+
+.col-lg-4 {
+    width: var(--coll-4);
+    padding: 10px;
+}
+
+
+header .price {
+    width: 350px;
+    height: 110px;
+    background: var(--green1);
+    margin-top: 52px;
+    margin-bottom: 135px;
+}
+
+header .price h4 {
+    text-align: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 60px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 10px;
+
+
+}
+
+
+@media (max-width:594px) {
+
+        header {
+            background-image: url(./Screenshot_6.png);
+            background-size: cover;
+            background-position-x: center;
+        }
+
+
+        /* header ul {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        } */
+
+
+        header ul li {
+            margin-top: 30px;
+        }
+
+        header .p1 {
+            font-weight: 700;
+            color: red;
+        }
+}
+
+
+@media (max-width:440px) {
+
+    header {
+        background-image: url(./Screenshot_6.png);
+        background-size: cover;
+        background-position-x: center;
+    }
+
+
+    header .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+
+    header ul li {
+        margin-top: 30px;
+    }
+
+    header .p1 {
+        font-weight: 700;
+        color: red;
+    }
+}
+
+
+
+/* .row :hover{
+    background: silver;
+    opacity: 0.1; 
+
+    shu narsa keyingi uyga vazifani bajarganda kerak bo'ladi
+
+    this is to need the next homework
+} */
+
+
+.display-flex {
+    display: flex;
+}
+
+
+.jc-s-between {
+    justify-content: space-between;
+}
+
+
+.aligin-items-center {
+    align-items: center;
+}
+
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+
+.jc-s-araund {
+    justify-content: space-around;
+}
+
+
+.text-aligin-center {
+    text-align: center;
+}
+
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+
+/* ======================main start============================== */
+
+main ul {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+main ul li a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #7A7A7A;
+}
+
+
+main ul li a:hover {
+    color: var(--green1);
+}
+
+
+main h2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: var(--green1);
+    margin-top: 36px;
+    margin-bottom: 10px;
+}
+
+
+main p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--white);
+}
+
+
+main img {
+    width: 100%;
+}
+
+
+@media(max-width:678px) {
+
+    .col-md-6 {
+        width: var(--coll-6);
+    }
+
+}
+
+
+@media(max-width:440px) {
+
+    .col {
+        width: var(--coll-12);
+    }
+
+    main .row ul li a {
+        padding-right: 50px;
+    }
+
+}
